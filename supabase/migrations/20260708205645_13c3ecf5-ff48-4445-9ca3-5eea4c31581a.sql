@@ -1,0 +1,2 @@
+ALTER TABLE public.finance_settings ADD COLUMN IF NOT EXISTS categorias_extra jsonb NOT NULL DEFAULT '[]'::jsonb;
+ALTER TABLE public.payments ADD COLUMN IF NOT EXISTS split_extra jsonb NOT NULL DEFAULT '[]'::jsonb;
